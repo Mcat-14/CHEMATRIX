@@ -1,0 +1,20 @@
+{
+  "name": "chematrix",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CHEMATRIX - offline chemistry solver and learning PWA",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "node tools/build-sw.mjs",
+    "serve": "node tools/build-sw.mjs && node tools/serve.mjs",
+    "test:browser": "node tools/build-sw.mjs && node tests/browser/run.mjs",
+    "report": "node tools/test-report.mjs",
+    "icons": "node tools/make-icons.mjs"
+  },
+  "devDependencies": {
+    "chart.js": "^4.6.1",
+    "geist": "^1.9.2",
+    "puppeteer-core": "^25.18.1"
+  }
+}
